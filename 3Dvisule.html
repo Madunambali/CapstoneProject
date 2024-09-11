@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Molecular Visualization with Periodic Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script> <!-- Include 3Dmol.js -->
+</head>
+<body>
+    <header class="header">
+        <h1>Interactive 3D Molecular Builder</h1>
+    </header>
+
+    <!-- Periodic Table Section -->
+    <section class="periodic-table">
+        <h2>Pick Elements to Create a Molecule</h2>
+        <div id="table-container">
+            <!-- Periodic table will be dynamically generated here -->
+        </div>
+    </section>
+
+    <!-- Molecule Builder Section -->
+    <section class="molecule-builder">
+        <h2>Your Molecule</h2>
+        <div id="molecule-formula">Formula: <span id="molecule-formula-text"></span></div>
+        <button id="visualize-button" class="cta-button">Visualize Molecule</button>
+    </section>
+
+    <!-- 3D Visualization Section -->
+    <section class="visualization">
+        <h2>3D Molecular Structure</h2>
+        <div id="3dmol-container" style="width: 100%; height: 400px; background-color: black;"></div>
+    </section>
+
+    <script src="3Dvisual.js"></script>
+</body>
+</html>

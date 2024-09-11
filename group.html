@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Profiles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <style>
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: rgba(44, 62, 80, 0.8); /* Semi-transparent */
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+    </style>
+
+    <header>
+        <h1>Meet Our Team</h1>
+    </header>
+
+    <main class="profiles">
+        <section class="profile">
+            <img src="images/zweli.jpg" alt="Zweli Ngwenya" class="profile-img">
+            <div class="profile-info">
+                <h2>Zweli Ngwenya</h2>
+                <p>University of Johannesburg Public Management and Governance Graduate (PMG)</p>
+                <p>Zweli Ngwenya is a 2024 graduate who embarked on a transformative journey in a work readiness program, specializing in both front and back-end programming.</p>
+            </div>
+        </section>
+
+        <section class="profile">
+            <img src="\Mbali.jpeg" alt="Mbali Maduna" class="profile-img">
+            <div class="profile-info">
+                <h2>Mbali Maduna</h2>
+                <p>University of Johannesburg Political Sciences Graduate</p>
+                <p>Mbali Maduna, also a 2024 graduate, joined a work readiness program focusing on front and back-end programming, marking a remarkable journey in the tech field.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Group Profiles. All rights reserved.</p>
+    </footer>
+</body>
+</html>

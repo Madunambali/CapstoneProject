@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict - Molecular Explore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="C:\Users\ASUS\Documents\dashboard\logo.jpg" width="60 px" alt="App Logo" class="logo-image">
+            <div class="logo-text">Molecular Explore</div>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="predict.html">Predict</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+    </header>
+    <style>
+    
+        body {
+            
+            color: antiquewhite; /* Text color for the body */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .transparent-container {
+            background-color: rgba(255, 255, 255, 0.5); /* White background with 50% opacity */
+            color: black; /* Text color inside the container */
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        
+        </style>
+
+
+<div class="transparent-container">
+    <!-- Predict Section -->
+    <section class="predict">
+        <h2>Molecular Prediction</h2>
+        <form id="predict-form">
+            <!-- Molecular Name -->
+            <div class="form-group">
+                <label for="molecular-name">Molecular Name</label>
+                <input type="text" id="molecular-name" name="molecularName" placeholder="Enter molecular name" required>
+            </div>
+
+            <!-- Molecular Weight -->
+            <div class="form-group">
+                <label for="molecular-weight">Molecular Weight (g/mol)</label>
+                <input type="number" step="0.01" id="molecular-weight" name="molecularWeight" placeholder="Enter molecular weight" required>
+            </div>
+
+            <!-- HOMO -->
+            <div class="form-group">
+                <label for="homo">Highest Occupied Molecular Orbital (HOMO) (eV)</label>
+                <input type="number" step="0.01" id="homo" name="homo" placeholder="Enter HOMO value" required>
+            </div>
+            <!-- LUMO -->
+            <div class="form-group">
+                <label for="lumo">Lowest Unoccupied Molecular Orbital (LUMO) (eV)</label>
+                <input type="number" step="0.01" id="lumo" name="lumo" placeholder="Enter LUMO value" required>
+            </div>
+
+            <!-- Start Prediction Button -->
+            <button type="submit" class="cta-button">Start Prediction</button>
+        </form>
+
+        <!-- Prediction Result Display -->
+        <div id="prediction-result" class="result-container"></div>
+    </section>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Molecular Explore. All rights reserved.</p>
+        <p>Contact us: contact@molecularexplore.com</p>
+        <p>Version 1.0.0</p>
+    </footer>
+
+    <script src="predict.js"></script>
+</body>
+</html>
